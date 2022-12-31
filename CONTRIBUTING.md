@@ -53,3 +53,22 @@ Before you get started, make sure that you have [Node.js and `npm`](https://node
 10. We will review your changes and merge them if everything is fine
 
 Congratulations! You have successfully contributed to the project!
+
+### How to test the bot locally
+
+If you want to test the bot locally, you will need to set up a Discord bot of your own. You can follow [this guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html) to set up a bot. Once you have created a bot, you will need to create a `.env` file in the root directory of the project. The file should look like this:
+
+```env
+TOKEN=your-bot-token
+CLIENT_ID=your-bot-client-id
+GUILD_ID=your-server-id
+```
+
+You can get the bot token from the bot page in the Discord developer portal. The client ID is just the application ID of the bot. You can get the server ID by enabling developer mode in Discord and right-clicking on the server icon that you want to deploy the bot to.
+
+Once you have created the `.env` file, you can run the bot using the following commands:
+
+```bash
+pnpm deploy
+pnpm start
+```
