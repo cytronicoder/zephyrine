@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   discord.js: ^14.7.1
+  dotenv: ^16.0.3
   eslint: ^8.30.0
 
 dependencies:
   discord.js: 14.7.1
 
 devDependencies:
+  dotenv: 16.0.3
   eslint: 8.30.0
 
 packages:
@@ -278,6 +280,11 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+    dev: true
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
     dev: true
 
   /escape-string-regexp/4.0.0:
